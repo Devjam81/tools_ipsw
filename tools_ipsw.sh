@@ -3,10 +3,12 @@ PURPLE="\033[1;35m"
 RED="\033[0;32m"
 ENDCOLOR="\033[0m"
 
-
+echo -e "
+\033[31m########################################################################################\033[m
+                              $PURPLE"Support Ipswtools bash"$ENDCOLOR
+\033[31m######################################################################################\033[m"
  
-echo -e $PURPLE"                            
-                        \033[Ipswtools support bash Presents\033[0m :"$ENDCOLOR
+
 echo -e $RED" 
 #################################################################################
  ████████╗ ██████╗  ██████╗ ██╗     ███████╗        ██╗██████╗ ███████╗██╗    ██╗
@@ -24,13 +26,13 @@ echo -e "
 \033[31m########################################################################################\033[m
                               $PURPLE"Credits To"$ENDCOLOR
 \033[31m######################################################################################\033[m"
-echo -e $RED"                         Special thanks to test
-								tools to have fun with ipsw Custom
+echo -e $RED"        Special thanks to test tools to have fun with ipsw Custom
                     
                          $PURPLE" created by Devjam81 "$ENDCOLOR 
+
 "$ENDCOLOR
 
-version="1001"
+version="1000"
 
 
 if [ $UID -ne 0 ]; then
@@ -43,8 +45,8 @@ if [ ! -e "/usr/bin/tools_ipsw" ];then
 	echo "Script is not installed. Do you want to install it ? (Y/N)"
 	read install
 	if [[ $install = Y || $install = y ]] ; then
-		cp -v $0 /usr/bin/tools_ipsw
-		chmod +x /usr/bin/tools_ipsw
+		cp -v $0 /usr/bin/tools_ipsw.sh
+		chmod +x /usr/bin/tools_ipsw.sh
 		#rm $0
 		echo "Script should now be installed. Launching it !"
 		sleep 3
