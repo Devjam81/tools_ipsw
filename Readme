@@ -8,7 +8,7 @@
 
 Install :
 
-wget  https://raw.githubusercontent.com/Devjam81/tools_ipsw/master/tools_ipsw
+wget  https://raw.githubusercontent.com/Devjam81/tools_ipsw/master/tools_ipsw.sh
 
 chmod a+x tools_ipsw
 
